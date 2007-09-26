@@ -1,0 +1,88 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{800E8048-2D52-4469-BAF6-6DFBB0E77FEA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NLipsum</RootNamespace>
+    <AssemblyName>NLipsum</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>NLipsum.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormatStrings.cs" />
+    <Compile Include="LipsumGenerator.cs" />
+    <Compile Include="features\TextFeature.cs" />
+    <Compile Include="features\Paragraph.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="LipsumUtilities.cs" />
+    <Compile Include="features\Sentence.cs" />
+    <Compile Include="Lipsums.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NLipsum.snk" />
+    <None Include="resources\lipsum.dtd" />
+    <None Include="resources\childharold.xml" />
+    <None Include="resources\decameron.xml" />
+    <None Include="resources\faust.xml" />
+    <None Include="resources\inderfremde.xml" />
+    <None Include="resources\lebateauivre.xml" />
+    <None Include="resources\lemasque.xml" />
+    <None Include="resources\loremipsum.xml" />
+    <None Include="resources\nagyonfaj.xml" />
+    <None Include="resources\omagyar.xml" />
+    <None Include="resources\robinsonokruso.xml" />
+    <None Include="resources\theraven.xml" />
+    <None Include="resources\tierrayluna.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="licensing\LICENSE.txt" />
+    <Content Include="licensing\Lipsum %28python%29 license.txt" />
+    <Content Include="licensing\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
