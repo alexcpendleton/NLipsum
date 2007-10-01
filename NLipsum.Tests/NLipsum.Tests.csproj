@@ -41,9 +41,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NLipsum\NLipsum.csproj">
+    <ProjectReference Include="..\NLipsum.Core\NLipsum.Core.csproj">
       <Project>{800E8048-2D52-4469-BAF6-6DFBB0E77FEA}</Project>
-      <Name>NLipsum</Name>
+      <Name>NLipsum.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

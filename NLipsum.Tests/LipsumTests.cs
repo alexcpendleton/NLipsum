@@ -1,6 +1,7 @@
 using System;
 using System.Text;
 using MbUnit.Framework;
+using NLipsum.Core;
 
 namespace NLipsum.Tests {
 	[TestFixture]

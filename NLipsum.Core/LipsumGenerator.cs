@@ -5,7 +5,7 @@ using System.Xml;
 using System.Text.RegularExpressions;
 using System.Collections;
 
-namespace NLipsum {
+namespace NLipsum.Core {
 	/// <summary>
 	/// Represents a utility that generates Lipsum from a source.
 	/// </summary>
@@ -205,7 +205,7 @@ namespace NLipsum {
 			/*
 			 * TODO:  These generate methods could probably be 
 			 * refactored into one method that takes a count 
-			 * and an OrganizableTextFeature. */ 
+			 * and a TextFeature. */ 
 			string[] paragraphs = new string[count];
 			string[] sentences = new string[] { };
 			for (int i = 0; i < count; i++) {
@@ -224,6 +224,7 @@ namespace NLipsum {
 
 			return paragraphs;
 		}
+
 		#endregion
 
 		#region Sentences

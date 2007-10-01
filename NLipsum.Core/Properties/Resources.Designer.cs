@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NLipsum.Properties {
+namespace NLipsum.Core.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace NLipsum.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NLipsum.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("NLipsum.Core.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -62,7 +62,7 @@ namespace NLipsum.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;
-        ///&lt;!DOCTYPE lipsum SYSTEM &quot;../lipsum.dtd&quot;&gt;
+        ///
         ///&lt;!-- This is a template file for custom lipsum texts --&gt;
         ///&lt;lipsum&gt;
         ///    &lt;copyright&gt;This text is under public domain&lt;/copyright&gt;
@@ -72,7 +72,8 @@ namespace NLipsum.Properties {
         ///	oh thou in hellas deemed of heavenly birth
         ///	muse formed or fabled at the minstrels will
         ///	since shamed full oft by later lyres on earth
-        ///	mine dares not call thee from thy sacr [rest of string was truncated]&quot;;.
+        ///	mine dares not call thee from thy sacred hill
+        ///	yet there ive wandered by thy  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ChildHarold {
             get {
@@ -82,13 +83,13 @@ namespace NLipsum.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;
-        ///&lt;!DOCTYPE lipsum SYSTEM &quot;../lipsum.dtd&quot;&gt;
+        ///
         ///&lt;lipsum&gt;
         ///    &lt;copyright&gt;This text is under public domain&lt;/copyright&gt;
         ///    &lt;title&gt;Decameron - Novella Prima&lt;/title&gt;
         ///    &lt;author&gt;Giovanni Boccaccio&lt;/author&gt;
         ///    &lt;text&gt;
-        ///	convenevole cosa e carissime donne che ciascheduna cosa la quale l&apos;uomo fa dallo ammirabile e santo nome di colui il quale di tutte fu facitore le dea principio per che dovendo io al vostro novellare sí come primo dare cominciamento intendo da una delle  [rest of string was truncated]&quot;;.
+        ///	convenevole cosa e carissime donne che ciascheduna cosa la quale l&apos;uomo fa dallo ammirabile e santo nome di colui il quale di tutte fu facitore le dea principio per che dovendo io al vostro novellare sí come primo dare cominciamento intendo da una delle sue maravigliose cose incominciare accio [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Decameron {
             get {
@@ -98,7 +99,7 @@ namespace NLipsum.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;
-        ///&lt;!DOCTYPE lipsum SYSTEM &quot;../lipsum.dtd&quot;&gt;
+        ///
         ///&lt;lipsum&gt;
         ///    &lt;copyright&gt;This text is under public domain&lt;/copyright&gt;
         ///    &lt;title&gt;Faust: Der Tragödie erster Teil&lt;/title&gt;
@@ -109,7 +110,8 @@ namespace NLipsum.Properties {
         ///	versuch ich wohl euch diesmal festzuhalten
         ///	fühl ich mein herz noch jenem wahn geneigt
         ///	ihr drängt euch zu  nun gut so mögt ihr walten
-        ///	wie ihr a [rest of string was truncated]&quot;;.
+        ///	wie ihr aus dunst und nebel um mich steigt
+        ///	mein [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Faust {
             get {
@@ -119,7 +121,7 @@ namespace NLipsum.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;
-        ///&lt;!DOCTYPE lipsum SYSTEM &quot;../lipsum.dtd&quot;&gt;
+        ///
         ///&lt;lipsum&gt;
         ///    &lt;copyright&gt;This text is under public domain&lt;/copyright&gt;
         ///    &lt;title&gt;In der Fremde&lt;/title&gt;
@@ -135,7 +137,8 @@ namespace NLipsum.Properties {
         ///	o komm zurück ich hab dich lieb
         ///	du bist mein einz&apos;ges glück
         ///
-        ///	doch weiter we [rest of string was truncated]&quot;;.
+        ///	doch weiter weiter sonder rast
+        ///	du darfst nicht still [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string InDerFremde {
             get {
@@ -145,7 +148,7 @@ namespace NLipsum.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-2&quot;?&gt;
-        ///&lt;!DOCTYPE lipsum SYSTEM &quot;../lipsum.dtd&quot;&gt;
+        ///
         ///&lt;lipsum&gt;
         ///    &lt;copyright&gt;This text is under public domain&lt;/copyright&gt;
         ///    &lt;title&gt;Le Bateau Ivre&lt;/title&gt;
@@ -157,7 +160,8 @@ namespace NLipsum.Properties {
         ///	les ayant cloués nus aux poteaux de couleurs
         ///
         ///	j&apos;étais insoucieux de tous les équipages
-        ///	porteur de blés flamands o [rest of string was truncated]&quot;;.
+        ///	porteur de blés flamands ou de cotons anglais
+        ///	quand avec mes hal [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string LeBateauIvre {
             get {
@@ -167,7 +171,7 @@ namespace NLipsum.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-2&quot;?&gt;
-        ///&lt;!DOCTYPE lipsum SYSTEM &quot;../lipsum.dtd&quot;&gt;
+        ///
         ///&lt;lipsum&gt;
         ///    &lt;copyright&gt;This text is under public domain&lt;/copyright&gt;
         ///    &lt;title&gt;Le Masque&lt;/title&gt;
@@ -179,7 +183,7 @@ namespace NLipsum.Properties {
         ///	cette femme morceau vraiment miraculeux
         ///	divinement robuste adorablement mince
         ///	est faite pour trôner sur des lits somptueux
-        ///	et charm [rest of string was truncated]&quot;;.
+        ///	et charmer les loisirs d&apos;un pontife ou d&apos;un prin [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string LeMasque {
             get {
@@ -189,13 +193,13 @@ namespace NLipsum.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;
-        ///&lt;!DOCTYPE lipsum SYSTEM &quot;../lipsum.dtd&quot;&gt;
+        ///
         ///&lt;lipsum&gt;
         ///    &lt;copyright&gt;This text is under public domain&lt;/copyright&gt;
         ///    &lt;title&gt;Lorem ipsum&lt;/title&gt;
         ///    &lt;author&gt;Cicero&lt;/author&gt;
         ///    &lt;text&gt;
-        ///	lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor  [rest of string was truncated]&quot;;.
+        ///	lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua at vero eos et accusam et justo duo dolores et ea rebum stet clita kasd gubergren no sea takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet cons [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string LoremIpsum {
             get {
@@ -205,7 +209,7 @@ namespace NLipsum.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-2&quot;?&gt;
-        ///&lt;!DOCTYPE lipsum SYSTEM &quot;../lipsum.dtd&quot;&gt;
+        ///
         ///&lt;lipsum&gt;
         ///    &lt;copyright&gt;This text is under public domain&lt;/copyright&gt;
         ///    &lt;title&gt;Nagyon fáj&lt;/title&gt;
@@ -225,7 +229,10 @@ namespace NLipsum.Properties {
         ///
         ///	ezért ölel
         ///	minden ami asszonyra lel
-        ///	míg el nem fe [rest of string was truncated]&quot;;.
+        ///	míg el nem fehérül a száj is
+        ///
+        ///	kettõs teher
+        ///	s ket [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string NagyonFaj {
             get {
@@ -235,13 +242,13 @@ namespace NLipsum.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-2&quot;?&gt;
-        ///&lt;!DOCTYPE lipsum SYSTEM &quot;../lipsum.dtd&quot;&gt;
+        ///
         ///&lt;lipsum&gt;
         ///    &lt;copyright&gt;This text is under public domain&lt;/copyright&gt;
         ///    &lt;title&gt;Ómagyar-Mária siralom&lt;/title&gt;
         ///    &lt;author&gt;Ismeretlen&lt;/author&gt;
         ///    &lt;text&gt;
-        ///	volek syrolm thudothlon syrolmol sepedyk buol ozuk epedek walasth vylagumtul sydou fyodumtul ezes urumemtuul o en eses urodum eggen yg fyodum syrou aniath thekunched buabeleul kyniuhhad scemem kunuel arad en iunhum buol farad the werud hullothya en iunhum olelothya  [rest of string was truncated]&quot;;.
+        ///	volek syrolm thudothlon syrolmol sepedyk buol ozuk epedek walasth vylagumtul sydou fyodumtul ezes urumemtuul o en eses urodum eggen yg fyodum syrou aniath thekunched buabeleul kyniuhhad scemem kunuel arad en iunhum buol farad the werud hullothya en iunhum olelothya vylag uilaga viragnac uiraga keseruen ky [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Omagyar {
             get {
@@ -251,7 +258,7 @@ namespace NLipsum.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-2&quot;?&gt;
-        ///&lt;!DOCTYPE lipsum SYSTEM &quot;../lipsum.dtd&quot;&gt;
+        ///
         ///&lt;lipsum&gt;
         ///    &lt;copyright&gt;This text is under public domain&lt;/copyright&gt;
         ///    &lt;title&gt;Robinsono Kruso (Esperanto)&lt;/title&gt;
@@ -261,7 +268,7 @@ namespace NLipsum.Properties {
         ///	sesjarrego de la regxo karolo la unua infane mi sentadis grandan
         ///	deziron por pasigi mian vivon sur la maro kaj pliagxante la deziro
         ///	plifortigxis gxis fine mi forlasis mian lernejon kaj hejmon kaj
-        ///	 [rest of string was truncated]&quot;;.
+        ///	piede mi trovis mian vojon al hull kie m [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string RobinsonoKruso {
             get {
@@ -271,7 +278,7 @@ namespace NLipsum.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;
-        ///&lt;!DOCTYPE lipsum SYSTEM &quot;../lipsum.dtd&quot;&gt;
+        ///
         ///&lt;!-- This is a template file for custom lipsum texts --&gt;
         ///&lt;lipsum&gt;
         ///    &lt;copyright&gt;This text is under public domain&lt;/copyright&gt;
@@ -281,7 +288,8 @@ namespace NLipsum.Properties {
         ///	once upon a midnight dreary while i pondered weak and weary
         ///	over many a quaint and curious volume of forgotten lore
         ///	while i nodded nearly napping suddenly there came a tapping
-        ///	as of some one gently rapping rap [rest of string was truncated]&quot;;.
+        ///	as of some one gently rapping rapping at my chamber door
+        ///	tis some visit [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string TheRaven {
             get {
@@ -291,7 +299,7 @@ namespace NLipsum.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-2&quot;?&gt;
-        ///&lt;!DOCTYPE lipsum SYSTEM &quot;../lipsum.dtd&quot;&gt;
+        ///
         ///&lt;lipsum&gt;
         ///    &lt;copyright&gt;This text is under public domain&lt;/copyright&gt;
         ///    &lt;title&gt;Tierra y Luna&lt;/title&gt;
@@ -304,7 +312,8 @@ namespace NLipsum.Properties {
         ///	con las criaturas mudas que pasan bajo los arcos
         ///	con el arroyo de venas ansioso de abrir sus manecitas
         ///
-        ///	 [rest of string was truncated]&quot;;.
+        ///	tierra tan sólo tierra
+        ///	tierra para los [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string TierrayLuna {
             get {

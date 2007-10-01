@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NLipsum {
+namespace NLipsum.Core {
 	/// <summary>
 	/// Represents a part or section of text, such as a paragraph or sentence.
 	/// </summary>

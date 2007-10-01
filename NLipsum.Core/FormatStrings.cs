@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NLipsum {
+namespace NLipsum.Core {
 	/// <summary>
 	/// Common formatting strings.
 	/// </summary>

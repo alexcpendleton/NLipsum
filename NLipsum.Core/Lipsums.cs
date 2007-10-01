@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using NLipsum.Properties;
+using NLipsum.Core.Properties;
 
-namespace NLipsum {
+namespace NLipsum.Core {
 	/// <summary>
 	/// All of these Lipsums are derived from the files at http://lipsum.sourceforge.net/
 	/// </summary>

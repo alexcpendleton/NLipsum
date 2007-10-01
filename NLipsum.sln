@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLipsum", "NLipsum\NLipsum.csproj", "{800E8048-2D52-4469-BAF6-6DFBB0E77FEA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLipsum.Tests", "NLipsum.Tests\NLipsum.Tests.csproj", "{AF224227-95BD-4939-BD40-FD992D07A36C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLipsum.Core", "NLipsum.Core\NLipsum.Core.csproj", "{800E8048-2D52-4469-BAF6-6DFBB0E77FEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{800E8048-2D52-4469-BAF6-6DFBB0E77FEA}.Debug|Any CPU.ActiveCfg = Release|Any CPU
-		{800E8048-2D52-4469-BAF6-6DFBB0E77FEA}.Debug|Any CPU.Build.0 = Release|Any CPU
-		{800E8048-2D52-4469-BAF6-6DFBB0E77FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{800E8048-2D52-4469-BAF6-6DFBB0E77FEA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AF224227-95BD-4939-BD40-FD992D07A36C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AF224227-95BD-4939-BD40-FD992D07A36C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF224227-95BD-4939-BD40-FD992D07A36C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF224227-95BD-4939-BD40-FD992D07A36C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{800E8048-2D52-4469-BAF6-6DFBB0E77FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{800E8048-2D52-4469-BAF6-6DFBB0E77FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{800E8048-2D52-4469-BAF6-6DFBB0E77FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{800E8048-2D52-4469-BAF6-6DFBB0E77FEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

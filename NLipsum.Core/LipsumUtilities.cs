@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Xml;
-using NLipsum.Properties;
+using NLipsum.Core.Properties;
 using System.Collections;
 using System.Text.RegularExpressions;
 
-namespace NLipsum {
+namespace NLipsum.Core {
 	public static class LipsumUtilities {
 
 		/// <summary>

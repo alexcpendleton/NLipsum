@@ -7,10 +7,10 @@
     <ProjectGuid>{800E8048-2D52-4469-BAF6-6DFBB0E77FEA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NLipsum</RootNamespace>
-    <AssemblyName>NLipsum</AssemblyName>
+    <RootNamespace>NLipsum.Core</RootNamespace>
+    <AssemblyName>NLipsum.Core</AssemblyName>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>NLipsum.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>NLipsum.Core.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,6 +35,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="features\Word.cs" />
     <Compile Include="FormatStrings.cs" />
     <Compile Include="LipsumGenerator.cs" />
     <Compile Include="features\TextFeature.cs" />
@@ -50,7 +51,7 @@
     <Compile Include="Lipsums.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="NLipsum.snk" />
+    <None Include="NLipsum.Core.snk" />
     <None Include="resources\lipsum.dtd" />
     <None Include="resources\childharold.xml" />
     <None Include="resources\decameron.xml" />
