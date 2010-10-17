@@ -230,11 +230,11 @@ namespace NLipsum.Core {
 		#region Sentences
 
 		/// <summary>
-		/// Generates 'count' sentences of lipsum text, using a Medium length sentence.  Will not perform any formatting.
+		/// Generates 'count' sentences of lipsum text, using a Medium length sentence.  Will use Phase formatting.
 		/// </summary>
 		/// <param name="count">The number of sentences desired.</param>
 		public string[] GenerateSentences(int count) {
-			return GenerateSentences(count, "");
+			return GenerateSentences(count, FormatStrings.Sentence.Phrase);
 		}
 
 		/// <summary>

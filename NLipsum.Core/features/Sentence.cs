@@ -79,7 +79,13 @@ namespace NLipsum.Core {
 		}
 		#endregion
 
-
+		public override string Format(string text) {
+			string result = base.Format(text);
+			if (result.Length > 1) {
+				result = result.Substring(0, 1).ToUpper() + result.Substring(1);
+			}
+			return result;
+		}
 
 	}
 

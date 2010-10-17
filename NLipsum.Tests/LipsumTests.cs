@@ -83,6 +83,15 @@ namespace NLipsum.Tests {
 			}
 		}
 
+		[Test]
+		public void TestSentenceCapitalizationAndPunctuation() {
+			string rawText = "this";
+			LipsumGenerator lipsum = new LipsumGenerator(rawText, false);
+			string[] generatedSentences = lipsum.GenerateSentences(1, new Sentence(1, 1));
+			string desiredSentence = "This.";
+			Assert.AreEqual(desiredSentence, generatedSentences[0]);
+		}
+
 		#endregion
 
 		#region Paragraphs

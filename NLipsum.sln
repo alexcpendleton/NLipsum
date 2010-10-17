@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLipsum.Tests", "NLipsum.Tests\NLipsum.Tests.csproj", "{AF224227-95BD-4939-BD40-FD992D07A36C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLipsum.Core", "NLipsum.Core\NLipsum.Core.csproj", "{800E8048-2D52-4469-BAF6-6DFBB0E77FEA}"
