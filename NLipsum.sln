@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLipsum.Core", "NLipsum.Cor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLipsum.Portable", "NLipsum.Portable\NLipsum.Portable.csproj", "{62AF86B0-1128-46E3-A9BB-75B9BB72071A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLipsum.Tests.Portable", "NLipsum.Tests.Portable\NLipsum.Tests.Portable.csproj", "{C6BDD7F2-4253-44BD-A8B1-AB585E00DA5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{62AF86B0-1128-46E3-A9BB-75B9BB72071A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62AF86B0-1128-46E3-A9BB-75B9BB72071A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62AF86B0-1128-46E3-A9BB-75B9BB72071A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6BDD7F2-4253-44BD-A8B1-AB585E00DA5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6BDD7F2-4253-44BD-A8B1-AB585E00DA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6BDD7F2-4253-44BD-A8B1-AB585E00DA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6BDD7F2-4253-44BD-A8B1-AB585E00DA5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
