@@ -5,10 +5,25 @@ using System.Xml;
 using NLipsum.Core.Properties;
 using System.Collections;
 using System.Text.RegularExpressions;
+#if PORTABLE
+using System.Xml.Linq;
+using ArrayList = System.Collections.Generic.List<string>;
+#endif
 
 namespace NLipsum.Core {
 	public static class LipsumUtilities {
 
+#if PORTABLE
+		/// <summary>
+		/// Creates an XDocument from a string.
+		/// </summary>
+		/// <param name="rawXml">The Xml from which to load the XDocument</param>
+		/// <returns></returns>
+		public static XDocument LoadXmlDocument(string rawXml) {
+			XDocument document = XDocument.Parse(rawXml);
+			return document;
+		}
+#else
 		/// <summary>
 		/// Creates an XmlDocument from a string.
 		/// </summary>
@@ -19,6 +34,7 @@ namespace NLipsum.Core {
 			document.LoadXml(rawXml);
 			return document;
 		}
+#endif
 
 		
 		/// <summary>
@@ -32,11 +48,19 @@ namespace NLipsum.Core {
 		/// <returns></returns>
 		public static StringBuilder GetTextFromRawXml(string rawXml) {
 			StringBuilder text = new StringBuilder();
+#if PORTABLE
+			XDocument data = LipsumUtilities.LoadXmlDocument(rawXml);
+			XElement textNode = data.Root.Element("text");
+			if (textNode != null) {
+				text.Append(textNode.Value);
+			}
+#else
 			XmlDocument data = LipsumUtilities.LoadXmlDocument(rawXml);
 			XmlNode textNode = data.DocumentElement.SelectSingleNode("text");
 			if (textNode != null) {
 				text.Append(textNode.InnerText);
 			}
+#endif
 
 			return text;
 		}
@@ -85,8 +109,12 @@ namespace NLipsum.Core {
 				}
 			}
 
+#if PORTABLE
+			return results.ToArray();
+#else
 			return (string[])results.ToArray(typeof(string));
 			
+#endif
 		}
 	}
 }

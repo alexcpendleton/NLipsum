@@ -1,6 +1,5 @@
 using System;
 using System.Text;
-using System.Collections.Specialized;
 using System.Xml;
 using System.Text.RegularExpressions;
 using System.Collections;
@@ -167,7 +166,7 @@ namespace NLipsum.Core {
 			if (count >= LipsumText.Length) {
 				count = LipsumText.Length - 1;
 			}
-			char[] chars = LipsumText.ToString().ToCharArray(0, count);
+			char[] chars = LipsumText.ToString().Substring(0, count).ToCharArray();
 
 			result[0] = new String(chars);
 
