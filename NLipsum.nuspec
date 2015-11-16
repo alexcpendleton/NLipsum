@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-16"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>NLipsum</id>
+        <version>1.0.0</version>
+        <title>NLipsum</title>
+        <authors>alex.c.pendleton</authors>
+        <owners />
+        <licenseUrl>https://opensource.org/licenses/mit</licenseUrl>
+        <projectUrl>https://github.com/alexcpendleton/NLipsum</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>NLipsum : Lorem Ipsum (Lipsum) Generator and Library for the .NET Framework (C#)</description>
+    </metadata>
+    <files>
+        <file src="NLipsum.Core/bin/Release/NLipsum.Core.dll" target="lib\net20" />
+        <file src="NLipsum.Core/bin/Release/NLipsum.Core.XML" target="lib\net20" />
+
+        <file src="NLipsum.Portable/bin/Release/NLipsum.Core.dll" target="lib\portable-net403+sl50+netcore45+wpa81+wp8" />
+        <file src="NLipsum.Portable/bin/Release/NLipsum.Core.XML" target="lib\portable-net403+sl50+netcore45+wpa81+wp8" />
+    </files>
+</package>
