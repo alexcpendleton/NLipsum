@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{62AF86B0-1128-46E3-A9BB-75B9BB72071A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NLipsum.Core</RootNamespace>
+    <AssemblyName>NLipsum.Core</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile147</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\NLipsum.Core\NLipsum.Core.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;PORTABLE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;PORTABLE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\NLipsum.Core.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <Compile Include="..\NLipsum.Core\features\Paragraph.cs">
+      <Link>features\Paragraph.cs</Link>
+    </Compile>
+    <Compile Include="..\NLipsum.Core\features\Sentence.cs">
+      <Link>features\Sentence.cs</Link>
+    </Compile>
+    <Compile Include="..\NLipsum.Core\features\TextFeature.cs">
+      <Link>features\TextFeature.cs</Link>
+    </Compile>
+    <Compile Include="..\NLipsum.Core\features\Word.cs">
+      <Link>features\Word.cs</Link>
+    </Compile>
+    <Compile Include="..\NLipsum.Core\FormatStrings.cs">
+      <Link>FormatStrings.cs</Link>
+    </Compile>
+    <Compile Include="..\NLipsum.Core\LipsumGenerator.cs">
+      <Link>LipsumGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\NLipsum.Core\Lipsums.cs">
+      <Link>Lipsums.cs</Link>
+    </Compile>
+    <Compile Include="..\NLipsum.Core\LipsumUtilities.cs">
+      <Link>LipsumUtilities.cs</Link>
+    </Compile>
+    <Compile Include="..\NLipsum.Core\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\NLipsum.Core\Properties\Resources.Designer.cs">
+      <Link>Properties\Resources.Designer.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\NLipsum.Core\Properties\Resources.resx">
+      <Link>Properties\Resources.resx</Link>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\NLipsum.Core\licensing\LICENSE.txt">
+      <Link>licensing\LICENSE.txt</Link>
+    </Content>
+    <Content Include="..\NLipsum.Core\licensing\Lipsum %28python%29 license.txt">
+      <Link>licensing\Lipsum %28python%29 license.txt</Link>
+    </Content>
+    <Content Include="..\NLipsum.Core\licensing\readme.txt">
+      <Link>licensing\readme.txt</Link>
+    </Content>
+    <None Include="..\NLipsum.Core\NLipsum.Core.snk">
+      <Link>NLipsum.Core.snk</Link>
+    </None>
+    <None Include="..\NLipsum.Core\resources\childharold.xml">
+      <Link>resources\childharold.xml</Link>
+    </None>
+    <None Include="..\NLipsum.Core\resources\decameron.xml">
+      <Link>resources\decameron.xml</Link>
+    </None>
+    <None Include="..\NLipsum.Core\resources\faust.xml">
+      <Link>resources\faust.xml</Link>
+    </None>
+    <None Include="..\NLipsum.Core\resources\inderfremde.xml">
+      <Link>resources\inderfremde.xml</Link>
+    </None>
+    <None Include="..\NLipsum.Core\resources\lebateauivre.xml">
+      <Link>resources\lebateauivre.xml</Link>
+    </None>
+    <None Include="..\NLipsum.Core\resources\lemasque.xml">
+      <Link>resources\lemasque.xml</Link>
+    </None>
+    <None Include="..\NLipsum.Core\resources\loremipsum.xml">
+      <Link>resources\loremipsum.xml</Link>
+    </None>
+    <None Include="..\NLipsum.Core\resources\nagyonfaj.xml">
+      <Link>resources\nagyonfaj.xml</Link>
+    </None>
+    <None Include="..\NLipsum.Core\resources\omagyar.xml">
+      <Link>resources\omagyar.xml</Link>
+    </None>
+    <None Include="..\NLipsum.Core\resources\robinsonokruso.xml">
+      <Link>resources\robinsonokruso.xml</Link>
+    </None>
+    <None Include="..\NLipsum.Core\resources\theraven.xml">
+      <Link>resources\theraven.xml</Link>
+    </None>
+    <None Include="..\NLipsum.Core\resources\tierrayluna.xml">
+      <Link>resources\tierrayluna.xml</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\NLipsum.Core\resources\lipsum.dtd">
+      <Link>resources\lipsum.dtd</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
