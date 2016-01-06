@@ -29,6 +29,15 @@ namespace NLipsum.Tests {
 			LipsumGenerator lipsum = new LipsumGenerator(expectedText, false);
 			Assert.AreEqual(lipsum.LipsumText.ToString(), expectedText);
 		}
+
+	    [Test]
+	    public void DefaultConstructorContainsLoremIpsum()
+	    {
+	        string expected = Lipsums.LoremIpsum;
+	        var generator = new LipsumGenerator();
+	        Assert.AreEqual(expected, generator.LipsumText.ToString());
+	    }
+
 		#endregion
 
 		#region Words

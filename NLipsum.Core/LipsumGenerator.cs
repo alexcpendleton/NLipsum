@@ -14,10 +14,13 @@ namespace NLipsum.Core {
 
 		#region Constructors
 
-		/// <summary>
-		/// Instantiates a LipsumGenerator.
-		/// </summary>
-		public LipsumGenerator() { }
+	    /// <summary>
+	    /// Instantiates a LipsumGenerator using the <see cref="Lipsums""/>
+	    /// </summary>
+	    public LipsumGenerator()
+	    {
+	        this.LipsumText = new StringBuilder(Lipsums.LoremIpsum);
+	    }
 
 		/// <summary>
 		/// Instantiates a LipsumGenerator with the passed data.
