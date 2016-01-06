@@ -15,7 +15,7 @@ namespace NLipsum.Core {
 		#region Constructors
 
 	    /// <summary>
-	    /// Instantiates a LipsumGenerator using the <see cref="Lipsums""/>
+	    /// Instantiates a LipsumGenerator using the <see cref="Lipsums.LoremIpsum"/> text corpus.
 	    /// </summary>
 	    public LipsumGenerator()
 	    {
