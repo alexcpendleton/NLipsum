@@ -2,14 +2,17 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>NLipsum</id>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <title>NLipsum</title>
-        <authors>alex.c.pendleton</authors>
-        <owners />
+        <authors>alexcpendleton</authors>
+		<owners>alexcpendleton</owners>
         <licenseUrl>https://opensource.org/licenses/mit</licenseUrl>
         <projectUrl>https://github.com/alexcpendleton/NLipsum</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>NLipsum : Lorem Ipsum (Lipsum) Generator and Library for the .NET Framework (C#)</description>
+		<description>NLipsum : Lorem Ipsum (Lipsum) Generator and Library for the .NET Framework (C#)</description>
+		<releaseNotes>
+		1.0.1: Restores accidentally removed default constructor behavior. LipsumGenerator's default constructor uses the LoremIpsum text corpus rather than nothing, like it did in the nuget version 0.1.3.
+		1.0.0: Adds support for Portable Class Libraries, thanks to mattleibow.</releaseNotes>
     </metadata>
     <files>
         <file src="NLipsum.Core/bin/Release/NLipsum.Core.dll" target="lib\net20" />
