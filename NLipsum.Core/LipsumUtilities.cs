@@ -5,7 +5,7 @@ using System.Xml;
 using NLipsum.Core.Properties;
 using System.Collections;
 using System.Text.RegularExpressions;
-#if PORTABLE
+#if PORTABLE || NETSTD
 using System.Xml.Linq;
 using ArrayList = System.Collections.Generic.List<string>;
 #endif
@@ -13,7 +13,7 @@ using ArrayList = System.Collections.Generic.List<string>;
 namespace NLipsum.Core {
 	public static class LipsumUtilities {
 
-#if PORTABLE
+#if PORTABLE || NETSTD
 		/// <summary>
 		/// Creates an XDocument from a string.
 		/// </summary>
@@ -48,7 +48,7 @@ namespace NLipsum.Core {
 		/// <returns></returns>
 		public static StringBuilder GetTextFromRawXml(string rawXml) {
 			StringBuilder text = new StringBuilder();
-#if PORTABLE
+#if PORTABLE || NETSTD
 			XDocument data = LipsumUtilities.LoadXmlDocument(rawXml);
 			XElement textNode = data.Root.Element("text");
 			if (textNode != null) {
@@ -109,7 +109,7 @@ namespace NLipsum.Core {
 				}
 			}
 
-#if PORTABLE
+#if PORTABLE || NETSTD
 			return results.ToArray();
 #else
 			return (string[])results.ToArray(typeof(string));

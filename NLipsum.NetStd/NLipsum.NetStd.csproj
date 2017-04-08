@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9E9C0ED-7C81-40A9-8C5B-F6CDD49E5598}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NLipsum.Core</RootNamespace>
+    <AssemblyName>NLipsum.Core</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NETSTD</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\NLipsum.Core.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETSTD</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\NLipsum.Core.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\NLipsum.Core\NLipsum.Core.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\NLipsum.Core\NLipsum.Core.snk">
+      <Link>NLipsum.Core.snk</Link>
+    </None>
+    <None Include="..\nlipsum.core\resources\lipsum.dtd">
+      <Link>resources\lipsum.dtd</Link>
+    </None>
+    <None Include="project.json" />
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\nlipsum.core\features\Paragraph.cs">
+      <Link>features\Paragraph.cs</Link>
+    </Compile>
+    <Compile Include="..\nlipsum.core\features\Sentence.cs">
+      <Link>features\Sentence.cs</Link>
+    </Compile>
+    <Compile Include="..\nlipsum.core\features\TextFeature.cs">
+      <Link>features\TextFeature.cs</Link>
+    </Compile>
+    <Compile Include="..\nlipsum.core\features\Word.cs">
+      <Link>features\Word.cs</Link>
+    </Compile>
+    <Compile Include="..\NLipsum.Core\FormatStrings.cs">
+      <Link>FormatStrings.cs</Link>
+    </Compile>
+    <Compile Include="..\NLipsum.Core\LipsumGenerator.cs">
+      <Link>LipsumGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\NLipsum.Core\Lipsums.cs">
+      <Link>Lipsums.cs</Link>
+    </Compile>
+    <Compile Include="..\NLipsum.Core\LipsumUtilities.cs">
+      <Link>LipsumUtilities.cs</Link>
+    </Compile>
+    <Compile Include="..\NLipsum.Core\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\nlipsum.core\licensing\LICENSE.txt">
+      <Link>licensing\LICENSE.txt</Link>
+    </Content>
+    <Content Include="..\nlipsum.core\licensing\Lipsum %28python%29 license.txt">
+      <Link>licensing\Lipsum %28python%29 license.txt</Link>
+    </Content>
+    <Content Include="..\nlipsum.core\licensing\readme.txt">
+      <Link>licensing\readme.txt</Link>
+    </Content>
+    <None Include="..\nlipsum.core\resources\tierrayluna.xml">
+      <Link>resources\tierrayluna.xml</Link>
+    </None>
+    <None Include="..\nlipsum.core\resources\theraven.xml">
+      <Link>resources\theraven.xml</Link>
+    </None>
+    <None Include="..\nlipsum.core\resources\robinsonokruso.xml">
+      <Link>resources\robinsonokruso.xml</Link>
+    </None>
+    <None Include="..\nlipsum.core\resources\omagyar.xml">
+      <Link>resources\omagyar.xml</Link>
+    </None>
+    <None Include="..\nlipsum.core\resources\nagyonfaj.xml">
+      <Link>resources\nagyonfaj.xml</Link>
+    </None>
+    <None Include="..\nlipsum.core\resources\loremipsum.xml">
+      <Link>resources\loremipsum.xml</Link>
+    </None>
+    <None Include="..\nlipsum.core\resources\lemasque.xml">
+      <Link>resources\lemasque.xml</Link>
+    </None>
+    <None Include="..\nlipsum.core\resources\lebateauivre.xml">
+      <Link>resources\lebateauivre.xml</Link>
+    </None>
+    <None Include="..\nlipsum.core\resources\inderfremde.xml">
+      <Link>resources\inderfremde.xml</Link>
+    </None>
+    <None Include="..\nlipsum.core\resources\faust.xml">
+      <Link>resources\faust.xml</Link>
+    </None>
+    <None Include="..\nlipsum.core\resources\decameron.xml">
+      <Link>resources\decameron.xml</Link>
+    </None>
+    <None Include="..\nlipsum.core\resources\childharold.xml">
+      <Link>resources\childharold.xml</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+</Project>
