@@ -13,6 +13,7 @@ TestResults
 *.user
 *.sln.docstates
 *.lock.json
+.vs
 
 # Build results
 [Dd]ebug/
