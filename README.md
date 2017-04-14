@@ -1,5 +1,5 @@
 #NLipsum : Lorem Ipsum (Lipsum) Generator and Library for the .NET Framework (C#)
-*Works in versions: 2.0 and higher (3.0, 3.5, 4.0)*
+*Works in versions: 2.0 and higher (3.0, 3.5, 4.0, 4.5, .Net Standard >= 1.6.1)*
 
 This project was vaguely inspired by [Lipsum : the text generator written in Python and wxPython](http://lipsum.sourceforge.net)
 
@@ -22,12 +22,13 @@ The built in text sources:
 
 NLipsum will choose a random selection of words from your text source and combine them into sentences and combine those sentences into paragraphs. You can request very specific criteria for your generated text or just let the defaults go to work. Generating text in HTML format is a breeze and there are built-in utility methods for HTML generation (paragraph tags).
 
-All code was written in C# using the .NET Framework 2.0, Visual Studio 2005. Support for the .NET 1.1 framework may be included at a future date depending on demand. Also, since this is open source you're always welcome to modify the code and submit your own changes for compatibility.
-
-##In the Wild
+## In the Wild
 - [Rapid Prototyping, the MVC Working Model by Edward Charbeneau](http://www.simple-talk.com/dotnet/asp.net/rapid-prototyping,-the-mvc-working-model/)
 - [WP7 Port by Dan Clarke](http://dan.clarke.name/2011/05/nlipsum-for-windows-phone-7-auto-generate-lorem-ipsum-for-wp7/)
 - [On Nuget thanks to wullinkm](https://nuget.org/packages/NLipsum)
 - [Test Data Generator by garykenneally](http://code.google.com/p/testdatagenerator/source/browse/trunk/DataGenerator/DataGenerator/TextRandomDataGenerator.cs?r=3)
+
+## Meta
+This is not a very active project. I'll continue to accept pull requests for version support, and reasonable bugs and changes. However, there are no planned features, and no plans for major changes. I don't have much of a personal use for Lipsum these days, so if you're really hankering for updates, tell me about it!
 
 Please feel free to send me any feedback or tell me about a project in which you've used NLipsum. I'd love to hear about it.
