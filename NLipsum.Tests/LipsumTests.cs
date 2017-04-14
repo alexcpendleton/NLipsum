@@ -1,11 +1,7 @@
 using System;
 using System.Text;
-#if PORTABLE
 using System.Linq;
 using NUnit.Framework;
-#else
-using MbUnit.Framework;
-#endif
 using NLipsum.Core;
 
 namespace NLipsum.Tests {
@@ -54,11 +50,7 @@ namespace NLipsum.Tests {
 			string[] wordsPrepared = lipsum.PreparedWords;
 
 			Assert.AreEqual(wordsInRawText, wordsPrepared.Length);
-#if PORTABLE
 			CollectionAssert.AreEqual(wordsPrepared, expectedArray);
-#else
-			CollectionAssert.AreElementsEqual(wordsPrepared, expectedArray);
-#endif
 
 		}
 
@@ -75,11 +67,7 @@ namespace NLipsum.Tests {
 			Assert.AreEqual(wordCount, generatedWords.Length);
 			
 			for (int i = 0; i < wordCount; i++) {
-#if PORTABLE
 				StringAssert.Contains(generatedWords[i], rawText);
-#else
-				Assert.Contains(rawText, generatedWords[i]);
-#endif
 			}
 		}
 		#endregion
@@ -101,11 +89,7 @@ namespace NLipsum.Tests {
 			for (int i = 0; i < desiredSentenceCount; i++) {
 				Assert.IsNotNull(generatedSentences[i], 
 					String.Format("Generated sentence [{0}] is null.", i));
-#if PORTABLE
 				Assert.IsNotEmpty(generatedSentences[i]);
-#else
-				StringAssert.IsNonEmpty(generatedSentences[i]);
-#endif
 			}
 		}
 
@@ -138,11 +122,7 @@ namespace NLipsum.Tests {
 			for (int i = 0; i < desiredParagraphCount; i++) {
 				Assert.IsNotNull(generatedParagraphs[i],
 					String.Format("Generated paragraph [{0}] is null.", i));
-#if PORTABLE
 				Assert.IsNotEmpty(generatedParagraphs[i]);
-#else
-				StringAssert.IsNonEmpty(generatedParagraphs[i]);
-#endif
 			}
 
 		}
@@ -192,13 +172,8 @@ namespace NLipsum.Tests {
 			CollectionAssert.DoesNotContain(returnedArray, "");
 			CollectionAssert.AllItemsAreNotNull(returnedArray);
 			CollectionAssert.AllItemsAreInstancesOfType(returnedArray, typeof(String));
-#if PORTABLE
 			Assert.AreEqual(expectedLength, returnedArray.Length);
 			CollectionAssert.AreEqual(expectedArray, returnedArray);
-#else
-			CollectionAssert.AreCountEqual(expectedLength, returnedArray);
-			CollectionAssert.AreElementsEqual(expectedArray, returnedArray);
-#endif
 		}
 
 		#endregion
@@ -227,13 +202,8 @@ namespace NLipsum.Tests {
 
 			Assert.IsNotNull(generated);
 			Assert.IsNotEmpty(generated);
-#if PORTABLE
 			StringAssert.StartsWith("<p>", generated);
 			StringAssert.EndsWith("</p>", generated);
-#else
-			StringAssert.StartsWith(generated, "<p>");
-			StringAssert.EndsWith(generated, "</p>");
-#endif
 		}		
 		#endregion
 
