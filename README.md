@@ -1,4 +1,4 @@
-#NLipsum : Lorem Ipsum (Lipsum) Generator and Library for the .NET Framework (C#)
+# NLipsum : Lorem Ipsum (Lipsum) Generator and Library for the .NET Framework (C#)
 *Works in versions: 2.0 and higher (3.0, 3.5, 4.0, 4.5, .Net Standard >= 1.6.1)*
 
 This project was vaguely inspired by [Lipsum : the text generator written in Python and wxPython](http://lipsum.sourceforge.net)
